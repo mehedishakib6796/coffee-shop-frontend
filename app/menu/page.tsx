@@ -28,14 +28,14 @@ export default function MenuPage() {
     ? fullMenu 
     : fullMenu.filter(item => item.category === filter);
 
-  // লগইন চেক ফাংশন
+  
   const checkLoginStatus = () => {
-    const user = localStorage.getItem("user"); // বা আপনার টোকেন কী
+    const user = localStorage.getItem("user"); 
     return !!user;
   };
 
   const handleAddToCart = (item: any) => {
-    // লগইন চেক করা হচ্ছে
+   
     if (!checkLoginStatus()) {
       Swal.fire({
         title: 'Login Required!',
@@ -53,13 +53,13 @@ export default function MenuPage() {
         }
       }).then((result) => {
         if (result.isConfirmed) {
-          router.push("/login"); // আপনার লগইন পেজের পাথ
+          router.push("/login"); 
         }
       });
       return;
     }
 
-    // লগইন থাকলে কার্টে যোগ হবে
+    
     addToCart(item);
     Swal.fire({
       title: 'Added!',

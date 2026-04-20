@@ -1,7 +1,7 @@
 "use client"; 
 import { motion } from "framer-motion";
 import Image from 'next/image';
-import Link from 'next/link'; // লিঙ্ক ইমপোর্ট করা হয়েছে
+import Link from 'next/link'; 
 import Navbar from './components/Navbar';
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
     <main className="relative min-h-screen bg-black overflow-x-hidden">
       <Navbar />
       
-      {/* Hero Section */}
+      
       <section className="relative h-screen w-full flex items-center justify-start px-10 md:px-24">
         <div className="absolute inset-0 z-0">
           <Image src="/dash.png" alt="Background" fill className="object-cover" priority />

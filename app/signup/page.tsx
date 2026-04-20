@@ -2,10 +2,10 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Swal from "sweetalert2"; 
-import { useRouter } from "next/navigation"; // রাউটার ইম্পোর্ট করুন
+import { useRouter } from "next/navigation"; 
 
 export default function SignUpPage() {
-  const router = useRouter(); // রাউটার ইনিশিয়ালাইজ করুন
+  const router = useRouter(); 
   
   const handleSignUp = (e: React.FormEvent) => {
     e.preventDefault();
@@ -25,7 +25,7 @@ export default function SignUpPage() {
         confirmButton: 'rounded-xl font-black uppercase px-10 py-3 shadow-lg'
       }
     }).then((result) => {
-      // বাটনে ক্লিক করলে লগইন পেজে নিয়ে যাবে
+    
       if (result.isConfirmed) {
         router.push("/login");
       }
@@ -35,7 +35,7 @@ export default function SignUpPage() {
   return (
     <main className="min-h-screen bg-[#0f0a07] text-white flex overflow-hidden font-sans">
       
-      {/* Left Side - Branding Section */}
+    
       <motion.div 
         initial={{ opacity: 0, x: -30 }}
         animate={{ opacity: 1, x: 0 }}
@@ -66,7 +66,7 @@ export default function SignUpPage() {
         </div>
       </motion.div>
 
-      {/* Right Side - Signup Form Section */}
+      
       <motion.div 
         initial={{ opacity: 0, x: 30 }}
         animate={{ opacity: 1, x: 0 }}

@@ -22,13 +22,12 @@ export default function ItemDetails() {
     ? parseInt(item.price.replace(/[^0-9]/g, '')) 
     : item.price;
 
-  // লগইন চেক ফাংশন
   const checkLoginStatus = () => {
     return !!localStorage.getItem("user");
   };
 
   const handleConfirmOrder = () => {
-    // লগইন না থাকলে পপআপ দেখাবে
+    
     if (!checkLoginStatus()) {
       Swal.fire({
         title: 'Login Required!',
@@ -51,7 +50,7 @@ export default function ItemDetails() {
       return;
     }
 
-    // লগইন থাকলে অর্ডার কনফার্ম হবে
+    
     Swal.fire({
       title: 'Brewing Your Happiness!',
       html: `

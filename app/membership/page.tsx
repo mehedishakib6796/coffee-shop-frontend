@@ -15,7 +15,7 @@ export default function MembershipPortal() {
       <Navbar />
       <section className="pt-40 pb-20 px-6 max-w-5xl mx-auto">
         
-        {/* User Card */}
+      
         <div className="bg-[#1a120b] border border-[#d4a373]/30 p-10 rounded-[3rem] shadow-2xl flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center gap-6">
             <div className="w-20 h-20 bg-[#d4a373] rounded-2xl flex items-center justify-center text-black text-3xl font-black">
@@ -34,7 +34,7 @@ export default function MembershipPortal() {
           </div>
         </div>
 
-        {/* Offers Section */}
+        
         <div className="mt-16">
           <h3 className="text-xl font-black uppercase tracking-widest text-[#d4a373] mb-8 border-l-4 border-[#d4a373] pl-4">Exclusive Offers</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
