@@ -8,7 +8,7 @@ export default function AboutPage() {
     <main className="min-h-screen bg-[#0f0a07] text-white relative overflow-hidden">
       <Navbar />
 
-      {/* ব্যাকগ্রাউন্ড গ্লো ইফেক্ট */}
+     
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
         <motion.div 
           animate={{ 
@@ -20,11 +20,11 @@ export default function AboutPage() {
         />
       </div>
 
-      {/* মেইন কন্টেন্ট সেকশন */}
+      
       <section className="pt-40 pb-20 px-6 max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
           
-          {/* বাম পাশের ছবি */}
+          
           <motion.div 
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -32,7 +32,7 @@ export default function AboutPage() {
             className="relative h-[500px] w-full rounded-[3.5rem] overflow-hidden border border-white/10 shadow-2xl group"
           >
             <Image 
-              src="/coffee-shop.jpg" // আপনার লোগো বা শপের ছবির পাথ
+              src="/coffee-shop.jpg" 
               alt="Caffeine Cove" 
               fill 
               className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -41,7 +41,7 @@ export default function AboutPage() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#0f0a07] via-transparent to-transparent opacity-60" />
           </motion.div>
 
-          {/* ডান পাশের তথ্য */}
+         
           <div className="space-y-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -92,21 +92,21 @@ export default function AboutPage() {
             
           </div>
 
-          {/* যোগাযোগ */}
+         
           <div className="space-y-4">
             <h4 className="text-[#d4a373] text-1xl font-bold uppercase tracking-widest text-sm">Contact Us</h4>
             <p className="text-[#efedea]text-sm">Cell: +880 1XXX-XXXXXX</p>
             <p className="text-[#efedea] text-sm">Email:caffeinecove@gmail.com</p>
           </div>
 
-          {/* সময়সূচী */}
+          
           <div className="space-y-4">
             <h4 className="text-[#d4a373]  text-2xl font-bold uppercase tracking-widest text-sm">Opening Hours</h4>
             <p className="text-[#efedea]  text-sm italic">Saturday - Thrusday: 10 AM - 11 PM</p>
             <p className="text-[#efedea] text-sm italic">Friday: 3 PM - 11 PM</p>
           </div>
 
-          {/* সোশ্যাল লিংক */}
+          
           <div className="space-y-4">
             <h4 className="text-[#d4a373] text-1xl font-bold uppercase tracking-widest text-sm">Follow Us</h4>
             <div className="flex gap-4">
@@ -124,7 +124,7 @@ export default function AboutPage() {
 
         </div>
 
-        {/* কপিরাইট */}
+      
         <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 text-center">
           <p className="text-gray-600 text-[10px] tracking-[0.3em] uppercase">
             © 2026 Caffeine Cove. Developed by Mehedi Shakib.

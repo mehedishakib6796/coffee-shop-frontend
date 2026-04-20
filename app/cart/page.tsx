@@ -29,7 +29,7 @@ export default function CartPage() {
   if (cart.length === 0) {
     return (
       <main className="min-h-screen bg-[#0a0705] text-white flex flex-col items-center justify-center p-6 relative overflow-hidden">
-        {/* Background Glow */}
+       
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#d4a373]/5 blur-[120px] rounded-full" />
         
         <h2 className="text-4xl font-black uppercase opacity-20 mb-8 tracking-tighter">Empty Cart</h2>
@@ -45,7 +45,7 @@ export default function CartPage() {
 
   return (
     <main className="min-h-screen bg-[#0f0a07] text-white pt-24 pb-20 px-6 font-sans selection:bg-[#d4a373]/30">
-      {/* Subtle Gradient Overlay */}
+     
       <div className="fixed inset-0 bg-gradient-to-b from-[#d4a373]/5 to-transparent pointer-events-none" />
 
       <div className="max-w-4xl mx-auto relative z-10">
@@ -102,7 +102,7 @@ export default function CartPage() {
           </AnimatePresence>
         </div>
 
-        {/* Summary Area - Enhanced Colors */}
+      
         <div className="mt-16 relative group">
           <div className="absolute -inset-2 bg-gradient-to-r from-[#d4a373]/20 to-[#1a120b] blur-2xl opacity-20"></div>
           <div className="relative bg-[#1a120b]/80 backdrop-blur-2xl p-10 rounded-[3.5rem] border border-white/10 flex flex-col md:flex-row justify-between items-center gap-8">
